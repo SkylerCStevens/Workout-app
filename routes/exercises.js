@@ -65,7 +65,7 @@ router.delete('/:id', async (req, res) => {
 // ========================================
 router.post('/update/:id', async ({params, body}, res) => {
     try {
-        const exercise = await Exercise.update({"_id": params.id}, {$set: {body}})
+        const exercise = await Exercise.update({"_id": params.id}, {$set: body})
         res.send(exercise)
     } catch(err) {
         res.status(500).json({message: err.message})

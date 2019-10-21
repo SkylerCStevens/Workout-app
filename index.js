@@ -1,8 +1,6 @@
 
-////////////////////////////////
-////     Road to Hire      ////
-///     LifeSports App     ///
-/////////////////////////////
+// Road to Hire
+// LifeSports App
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
